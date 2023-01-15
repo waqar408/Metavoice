@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+
+    >
+<EditText
+    android:id="@+id/ed_custom"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:paddingStart="10dp"
+    android:background="@drawable/edit_back"/>
+    <TextView
+        android:layout_below="@+id/ed_custom"
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="end"
+        android:layout_marginTop="10dp"
+        android:paddingEnd="10dp"/>
+</RelativeLayout>

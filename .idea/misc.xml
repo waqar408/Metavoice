@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Freelancing/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_angenbot.xml" value="0.25416666666666665" />
+        <entry key="..\:/Freelancing/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_dezimal_rechnung.xml" value="0.25416666666666665" />
+        <entry key="..\:/Freelancing/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_dolmetscher_rechnung.xml" value="0.25416666666666665" />
+        <entry key="..\:/Freelancing/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_header_angebot.xml" value="0.25416666666666665" />
+        <entry key="..\:/Freelancing/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_header_dezimal.xml" value="0.25416666666666665" />
+        <entry key="..\:/Freelancing/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_header_dolmetcher.xml" value="0.25416666666666665" />
+        <entry key="..\:/Freelancing/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_header_normzeilen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Freelancing/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_header_privatekunden_avtivity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Freelancing/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_normzeilen_rechnung.xml" value="0.25416666666666665" />
+        <entry key="..\:/Freelancing/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_privatkunden_rechnung.xml" value="0.264" />
+        <entry key="..\:/Freelancing/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_select_invoice.xml" value="0.11354166666666667" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_angebotn_priavte_input.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_angenbot.xml" value="0.4" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_dezimal_rechnung.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_dolmetscher_rechnung.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_footer_angebot.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_footer_dezimal.xml" value="0.264" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_footer_dolmetcher.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_footer_normzeilen.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_footer_privatekunden.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_header_angebot.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_header_dezimal.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_header_dolmetcher.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_header_normzeilen.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_header_privatekunden_avtivity.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_normzeilen_rechnung.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_privatkunden_rechnung.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/activity_select_invoice.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/dialog_edit_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/MetaphraseInvoice_6/MetaphraseInvoice/MetaphraseInvoice/app/src/main/res/layout/dialog_pdf_options.xml" value="0.13020833333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

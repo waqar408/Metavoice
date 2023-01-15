@@ -1,0 +1,2848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_invoice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkBlue"
+            >
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/appicon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rechnung"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/img"
+                android:gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_below="@+id/rl"
+            android:background="@color/colorAccent"
+            />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/view1"/>
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view2"
+                android:background="@color/darkBlue"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.9"
+                        android:layout_marginStart="4dp"
+                        >
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@color/transparent"
+                            android:text="Hauptsitz"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical"
+                            android:textSize="6sp" />
+                        <TextView
+                            android:id="@+id/tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="Metaphrase"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="Dolmetscher und Übersetzungsbüro"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                        <TextView
+                            android:id="@+id/tv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="Avenue Imam Muslim Ibn El Hajjej,"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                        <TextView
+                            android:id="@+id/tv5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="4051 Sousse Sahloul, Tunisia "
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="6dp"
+                        android:layout_weight="0.9">
+                        <TextView
+                            android:id="@+id/tv6"
+                            android:layout_width="match_parent"
+                            android:layout_height="12dp"
+                            android:background="@color/yellowtext"
+                            android:text=" Auftragsannahmestelle    "
+                            android:textColor="@color/orange"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginVertical="8dp"
+                            android:gravity="center_vertical|start"
+                            android:textSize="6sp" />
+                        <TextView
+                            android:id="@+id/tv7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="Metaphrase"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                        <TextView
+                            android:id="@+id/tv8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="Dolmetscher und Übersetzungsbüro"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                        <TextView
+                            android:id="@+id/tv9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="Berlinerstr. 300b"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                        <TextView
+                            android:id="@+id/tv10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="63065 Offenbach am Main"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1.1">
+                        <TextView
+                            android:id="@+id/tv11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="12dp"
+                            android:background="@color/yellowtext"
+                            android:text="Kundenadresse"
+                            android:textColor="@color/orange"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
+                            android:paddingEnd="12dp"
+                            android:gravity="center_vertical|center"
+                            android:layout_marginVertical="8dp"
+                            android:textSize="6sp" />
+                        <TextView
+                            android:id="@+id/tv12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="Herr"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                        <TextView
+                            android:id="@+id/tv13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="Youssef Ahmo"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                        <TextView
+                            android:id="@+id/tv14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="Altenbrunch strt 11"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                        <TextView
+                            android:id="@+id/tv15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="27472"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1.1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:gravity="end">
+                            <Button
+                                android:id="@+id/btn_editheader_Angebot"
+                                android:layout_width="match_parent"
+                                android:layout_height="27dp"
+                                android:text="Bearbeiten"
+                                android:textSize="5sp"
+                                android:textAllCaps="false"
+
+                                />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tv16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="Rechnung"
+                            android:textColor="@color/yellowtext"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                        <TextView
+
+                            android:id="@+id/tv17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="01 2345 678"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="Datum:"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                        <TextView
+                            android:id="@+id/tv18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="20/11/2021"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:textSize="6sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+        <EditText
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_below="@+id/rel"
+            android:background="@color/colorAccent"
+            />
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@color/lightBlue"
+            android:layout_below="@+id/view3"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="#ffffff"
+            android:layout_below="@+id/view4"
+            android:id="@+id/view5"/>
+        <!--<LinearLayout
+            android:id="@+id/ln"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/view5"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POS"
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"
+                android:background="@color/darkBlue"
+                android:textSize="6sp"
+                android:paddingBottom="3dp"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spanish nach Deutch"
+                android:background="@color/darkBlue"
+                android:textSize="6sp"
+                android:paddingBottom="3dp"
+                android:layout_weight="0.40"
+                android:gravity="center"
+                android:paddingTop="5dp"
+
+                android:textColor="@color/white"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hours"
+                android:background="@color/darkBlue"
+                android:textSize="6sp"
+                android:paddingBottom="3dp"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                 android:visibility="gone"
+                android:textColor="@color/white"/>
+            <View
+                android:visibility="gone"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minutes"
+                android:background="@color/darkBlue"
+                android:textSize="6sp"
+                android:paddingBottom="3dp"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                 android:visibility="gone"
+                android:textColor="@color/white"/>
+            <View
+                android:visibility="gone"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Std/Anzahl"
+                android:background="@color/darkBlue"
+                android:textSize="6sp"
+                android:paddingBottom="3dp"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:textColor="@color/white"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menge"
+                android:background="@color/darkBlue"
+                android:textSize="6sp"
+                android:paddingBottom="3dp"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:visibility="gone"
+                android:textColor="@color/white"/>
+            <View
+                android:visibility="gone"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Einzelpreis"
+                android:background="@color/darkBlue"
+                android:textSize="6sp"
+                android:paddingBottom="3dp"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:textColor="@color/white"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Betrag"
+                android:background="@color/darkBlue"
+                android:textSize="6sp"
+                android:paddingBottom="3dp"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:layout_below="@+id/ln"/>
+        <LinearLayout
+            android:id="@+id/ln"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/view5"
+            android:weightSum="1"
+            android:background="@color/darkBlue">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:stretchColumns="*"
+                android:shrinkColumns="*">
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="1.01"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="POS"
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:background="@color/darkBlue"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="0.40"
+                        android:background="@color/darkBlue"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="3dp"
+                        android:text="Spanish nach Deutsch"
+                        android:textColor="@color/white"
+                        android:textSize="6sp"
+
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Std/Anzahl"
+                        android:background="@color/darkBlue"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:textStyle="bold"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/white"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="0.15"
+                        android:background="@color/darkBlue"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="3dp"
+                        android:text="Einzelpreis(€)"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+
+                        android:textSize="6sp" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Betrag(€)"
+                        android:background="@color/darkBlue"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:textStyle="bold"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/white"/>
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:context=".MainActivity"
+            android:weightSum="1"
+            android:background="@color/white"
+            android:layout_below="@+id/ln">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:stretchColumns="*"
+                android:shrinkColumns="*">
+
+                <View android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_height="1dp" />
+                <!--Row 1-->
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="1.01"
+                    android:background="@color/white">
+
+                    <!-- <TextView
+                         android:id="@+id/textViewPlateValueLabel"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:text="Label1:"
+                         android:gravity="center"
+                         android:layout_margin="1dp"
+                         android:background="#FFFFFF"
+                         android:layout_weight="0.15"
+                         android:textSize="6sp"/>-->
+                    <EditText
+                        android:id="@+id/tv_pos_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+
+                        />
+
+                    <!--  <TextView
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:layout_weight="0.40"
+                          android:text="Spanish nach Deutch"
+                          android:textSize="6sp" />-->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_detail_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.40"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Hours"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Anzahl_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Minutes"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Einzelpreis_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="text"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--  <TextView
+                          android:layout_weight="0.15"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:text="Decimal Digit"
+                          android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Betrag_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:layout_margin="1dp"
+                        android:inputType="text"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Menge"
+                        android:textSize="6sp" />-->
+                </TableRow>
+
+
+                <View android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_height="1dp" />
+                <!--Row 2-->
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="1.01"
+                    android:background="@color/white">
+
+                    <!-- <TextView
+                         android:id="@+id/textViewPlateValueLabel"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:text="Label1:"
+                         android:gravity="center"
+                         android:layout_margin="1dp"
+                         android:background="#FFFFFF"
+                         android:layout_weight="0.15"
+                         android:textSize="6sp"/>-->
+                    <EditText
+                        android:id="@+id/tv_pos_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+
+                        />
+
+                    <!--  <TextView
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:layout_weight="0.40"
+                          android:text="Spanish nach Deutch"
+                          android:textSize="6sp" />-->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_detail_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.40"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Hours"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Anzahl_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="numberDecimal"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Minutes"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Einzelpreis_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="text"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--  <TextView
+                          android:layout_weight="0.15"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:text="Decimal Digit"
+                          android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Betrag_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:layout_margin="1dp"
+                        android:inputType="text"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Menge"
+                        android:textSize="6sp" />-->
+                </TableRow>
+
+
+                <View android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_height="1dp" />
+                <!--Row 3-->
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="1.01"
+                    android:background="@color/white">
+
+                    <!-- <TextView
+                         android:id="@+id/textViewPlateValueLabel"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:text="Label1:"
+                         android:gravity="center"
+                         android:layout_margin="1dp"
+                         android:background="#FFFFFF"
+                         android:layout_weight="0.15"
+                         android:textSize="6sp"/>-->
+                    <EditText
+                        android:id="@+id/tv_pos_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+
+                        />
+
+                    <!--  <TextView
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:layout_weight="0.40"
+                          android:text="Spanish nach Deutch"
+                          android:textSize="6sp" />-->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_detail_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.40"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Hours"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Anzahl_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="numberDecimal"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Minutes"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Einzelpreis_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="text"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--  <TextView
+                          android:layout_weight="0.15"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:text="Decimal Digit"
+                          android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Betrag_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:layout_margin="1dp"
+                        android:inputType="text"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Menge"
+                        android:textSize="6sp" />-->
+                </TableRow>
+
+
+                <View android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_height="1dp" />
+                <!--Row 4-->
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="1.01"
+                    android:background="@color/white">
+
+                    <!-- <TextView
+                         android:id="@+id/textViewPlateValueLabel"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:text="Label1:"
+                         android:gravity="center"
+                         android:layout_margin="1dp"
+                         android:background="#FFFFFF"
+                         android:layout_weight="0.15"
+                         android:textSize="6sp"/>-->
+                    <EditText
+                        android:id="@+id/tv_pos_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+
+                        />
+
+                    <!--  <TextView
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:layout_weight="0.40"
+                          android:text="Spanish nach Deutch"
+                          android:textSize="6sp" />-->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_detail_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.40"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Hours"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Anzahl_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="numberDecimal"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Minutes"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Einzelpreis_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="text"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--  <TextView
+                          android:layout_weight="0.15"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:text="Decimal Digit"
+                          android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Betrag_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:layout_margin="1dp"
+                        android:inputType="text"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Menge"
+                        android:textSize="6sp" />-->
+                </TableRow>
+
+
+                <View android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_height="1dp" />
+                <!--Row 5-->
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="1.01"
+                    android:background="@color/white">
+
+                    <!-- <TextView
+                         android:id="@+id/textViewPlateValueLabel"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:text="Label1:"
+                         android:gravity="center"
+                         android:layout_margin="1dp"
+                         android:background="#FFFFFF"
+                         android:layout_weight="0.15"
+                         android:textSize="6sp"/>-->
+                    <EditText
+                        android:id="@+id/tv_pos_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+
+                        />
+
+                    <!--  <TextView
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:layout_weight="0.40"
+                          android:text="Spanish nach Deutch"
+                          android:textSize="6sp" />-->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_detail_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.40"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Hours"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Anzahl_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="numberDecimal"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Minutes"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Einzelpreis_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="text"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--  <TextView
+                          android:layout_weight="0.15"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:text="Decimal Digit"
+                          android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Betrag_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:layout_margin="1dp"
+                        android:inputType="text"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Menge"
+                        android:textSize="6sp" />-->
+                </TableRow>
+
+
+                <View android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_height="1dp" />
+                <!--Row 6-->
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="1.01"
+                    android:background="@color/white">
+
+                    <!-- <TextView
+                         android:id="@+id/textViewPlateValueLabel"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:text="Label1:"
+                         android:gravity="center"
+                         android:layout_margin="1dp"
+                         android:background="#FFFFFF"
+                         android:layout_weight="0.15"
+                         android:textSize="6sp"/>-->
+                    <EditText
+                        android:id="@+id/tv_pos_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+
+                        />
+
+                    <!--  <TextView
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:layout_weight="0.40"
+                          android:text="Spanish nach Deutch"
+                          android:textSize="6sp" />-->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_detail_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.40"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Hours"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+
+                    <EditText
+                        android:id="@+id/tv_Anzahl_6"
+                        android:layout_width="0dp"
+                        android:layout_height="18dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="0.15"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="3dp"
+                        android:text=""
+                        android:textColor="@color/black"
+
+                        android:textSize="6sp" />
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Minutes"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Einzelpreis_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="text"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--  <TextView
+                          android:layout_weight="0.15"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:text="Decimal Digit"
+                          android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Betrag_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:layout_margin="1dp"
+                        android:inputType="text"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Menge"
+                        android:textSize="6sp" />-->
+                </TableRow>
+
+
+                <View android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_height="1dp" />
+                <!--Row 7-->
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="1.01"
+                    android:background="@color/white">
+
+                    <!-- <TextView
+                         android:id="@+id/textViewPlateValueLabel"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:text="Label1:"
+                         android:gravity="center"
+                         android:layout_margin="1dp"
+                         android:background="#FFFFFF"
+                         android:layout_weight="0.15"
+                         android:textSize="6sp"/>-->
+                    <EditText
+                        android:id="@+id/tv_pos_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+
+                        />
+
+                    <!--  <TextView
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:layout_weight="0.40"
+                          android:text="Spanish nach Deutch"
+                          android:textSize="6sp" />-->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_detail_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.40"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Hours"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Anzahl_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="numberDecimal"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Minutes"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+
+                    <EditText
+                        android:id="@+id/tv_Einzelpreis_7"
+                        android:layout_width="0dp"
+                        android:layout_height="18dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="0.15"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="3dp"
+                        android:text=""
+                        android:textColor="@color/black"
+
+                        android:textSize="6sp" />
+                    <!--  <TextView
+                          android:layout_weight="0.15"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:text="Decimal Digit"
+                          android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Betrag_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:layout_margin="1dp"
+                        android:inputType="text"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Menge"
+                        android:textSize="6sp" />-->
+                </TableRow>
+
+
+                <View android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_height="1dp" />
+                <!--Row 8-->
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="1.01"
+                    android:background="@color/white">
+
+                    <!-- <TextView
+                         android:id="@+id/textViewPlateValueLabel"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:text="Label1:"
+                         android:gravity="center"
+                         android:layout_margin="1dp"
+                         android:background="#FFFFFF"
+                         android:layout_weight="0.15"
+                         android:textSize="6sp"/>-->
+                    <EditText
+                        android:id="@+id/tv_pos_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+
+                        />
+
+                    <!--  <TextView
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:layout_weight="0.40"
+                          android:text="Spanish nach Deutch"
+                          android:textSize="6sp" />-->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_detail_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.40"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Hours"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Anzahl_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="numberDecimal"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Minutes"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Einzelpreis_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="text"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--  <TextView
+                          android:layout_weight="0.15"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:text="Decimal Digit"
+                          android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Betrag_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:layout_margin="1dp"
+                        android:inputType="text"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Menge"
+                        android:textSize="6sp" />-->
+                </TableRow>
+
+
+                <View android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_height="1dp" />
+                <!--Row 9-->
+                <TableRow
+                    android:id="@+id/tableRow9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="1.01"
+                    android:background="@color/white">
+
+                    <!-- <TextView
+                         android:id="@+id/textViewPlateValueLabel"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:text="Label1:"
+                         android:gravity="center"
+                         android:layout_margin="1dp"
+                         android:background="#FFFFFF"
+                         android:layout_weight="0.15"
+                         android:textSize="6sp"/>-->
+                    <EditText
+                        android:id="@+id/tv_pos_9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+
+                        />
+
+                    <!--  <TextView
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:layout_weight="0.40"
+                          android:text="Spanish nach Deutch"
+                          android:textSize="6sp" />-->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_detail_9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.40"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Hours"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Anzahl_9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="numberDecimal"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Minutes"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Einzelpreis_9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="text"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--  <TextView
+                          android:layout_weight="0.15"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:text="Decimal Digit"
+                          android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Betrag_9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:layout_margin="1dp"
+                        android:inputType="text"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Menge"
+                        android:textSize="6sp" />-->
+                </TableRow>
+
+
+                <View android:layout_width="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_height="1dp" />
+                <!--Row 10-->
+                <TableRow
+                    android:id="@+id/tableRow10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="1.01"
+                    android:background="@color/white">
+
+                    <!-- <TextView
+                         android:id="@+id/textViewPlateValueLabel"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:text="Label1:"
+                         android:gravity="center"
+                         android:layout_margin="1dp"
+                         android:background="#FFFFFF"
+                         android:layout_weight="0.15"
+                         android:textSize="6sp"/>-->
+                    <EditText
+                        android:id="@+id/tv_pos_10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+
+                        />
+
+                    <!--  <TextView
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:layout_weight="0.40"
+                          android:text="Spanish nach Deutch"
+                          android:textSize="6sp" />-->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_detail_10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.40"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Hours"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Anzahl_10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:inputType="numberDecimal"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Minutes"
+                        android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Einzelpreis_10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:paddingTop="5dp"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--  <TextView
+                          android:layout_weight="0.15"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:ems="5"
+                          android:gravity="center"
+                          android:layout_margin="1dp"
+                          android:background="#FFFFFF"
+                          android:text="Decimal Digit"
+                          android:textSize="6sp" />-->
+                    <View android:layout_width="0dp"
+                        android:layout_weight="0.005"
+                        android:background="@android:color/black"
+                        android:layout_height="match_parent"/>
+                    <EditText
+                        android:id="@+id/tv_Betrag_10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:background="@color/white"
+                        android:textSize="6sp"
+                        android:paddingBottom="3dp"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:inputType="text"
+                        android:layout_margin="1dp"
+
+                        android:textColor="@color/black"/>
+                    <!--<TextView
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:text="Menge"
+                        android:textSize="6sp" />-->
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/newdoltext"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@+id/ln2"
+            android:background="@color/darkBlue"
+            android:textStyle="bold"
+            android:text="Sollte der Einsatz länger als eine Stunde dauern, wird Ihnen von uns den Differenzbetrag in einer separaten Rechnung zugesandt."
+            android:textColor="@color/yellowtext"
+            android:textSize="5sp"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/view10"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_below="@+id/newdoltext"
+            android:background="@color/colorAccent"
+            />
+        <View
+            android:id="@+id/dd"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@color/lightBlue"
+            android:layout_below="@+id/view10"
+            />
+        <LinearLayout
+            android:layout_below="@+id/dd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkBlue"
+            android:orientation="horizontal"
+            android:id="@+id/ln3"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="7sp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="8dp"
+                    android:background="@null"
+                    android:text="Diese Rechnung beruft sich, auf dem Gebiet der Steuern vom Einkommen und Vermögen,auf das Doppelbesteuerungsabkommen zwischen der Bundesrepublik Deutschland, und der Volksrepublik Tunesien zur Einmalbesteurung."/>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:paddingTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Netto "
+                    android:textColor="@color/white"
+                    android:layout_weight="0.2"
+                    android:textSize="7sp"
+                    />
+                <EditText
+                    android:background="@color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mehrwertsteuer(19%)"
+                    android:textColor="@color/white"
+                    android:layout_weight="0.2"
+                    android:textSize="7sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textColor="@color/white"
+                    android:layout_weight="0.2"
+                    android:textSize="7sp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:gravity="right"
+                    android:textColor="@color/yellowtext"
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="3dp"
+                    android:textSize="7sp"
+                    android:background="@color/transparent"
+
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gesamtbetrag"
+                    android:textColor="@color/yellowtext"
+                    android:textStyle="bold"
+                    android:layout_weight="0.2"
+                    android:textSize="7sp"
+
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:orientation="vertical"
+                android:gravity="end"
+
+                android:layout_marginTop="5dp"
+                android:weightSum="1">
+                <EditText
+                    android:background="@color/transparent"
+                    android:id="@+id/tv_netto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4553.34"
+                    android:textColor="@color/white"
+                    android:layout_weight="0.2"
+
+                    android:textStyle="bold"
+                    android:textSize="7sp"
+android:layout_marginEnd="8dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white"/>
+                <EditText
+                    android:background="@color/transparent"
+                    android:id="@+id/tv_19_perc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="867.5"
+                    android:textColor="@color/white"
+                    android:layout_weight="0.2"
+                    android:paddingEnd="5dp"
+                    android:textSize="7sp"
+                    android:layout_marginEnd="5dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/white"
+                    android:layout_weight="0.2"
+                    android:textSize="7sp"
+
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white"/>
+                <EditText
+                    android:id="@+id/tv_advance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/yellowtext"
+                    android:layout_weight="0.2"
+                    android:textSize="7sp"
+                    android:paddingEnd="5dp"
+                    android:background="@color/transparent"
+                    android:layout_marginEnd="8dp"
+
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white"/>
+                <EditText
+                    android:background="@color/transparent"
+                    android:id="@+id/tv_grand_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5222.32"
+                    android:textColor="@color/yellowtext"
+                    android:textStyle="bold"
+                    android:layout_weight="0.2"
+                    android:textSize="7sp"
+                    android:layout_marginEnd="5dp"
+                    android:paddingEnd="5dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ln3"
+            android:background="@color/white"
+            android:id="@+id/view11"/>
+            <RelativeLayout
+                android:id="@+id/view8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view11"
+                android:orientation="vertical">
+
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:background="@color/colorPrimary"
+                    />
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_below="@+id/view7"
+                    android:background="@color/colorAccent"
+                    />
+                <LinearLayout
+                    android:id="@+id/dds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginEnd="10dp"
+                    >
+                    <Button
+                        android:id="@+id/btn_editfooter_dezimal"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:text="Fußzeile bearbeiten"
+                        android:textSize="10sp"
+                        android:textAllCaps="false"
+
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view8"
+            android:background="@color/darkBlue">
+            <LinearLayout
+                android:id="@+id/dddd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginEnd="10dp">
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:text="Edit Footer"
+                    android:textSize="10sp"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/dddd"
+                android:id="@+id/ln4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_18_metaphrase_footer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:background="@color/transparent"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:text="Metaphrase"
+                        android:textStyle="bold"
+                        android:textColor="@color/goldcolor"
+                        android:textSize="6sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_19_GroB_footer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="left"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:text="Beste Sprachschule in Tunesien für
+Deutsch &amp; weitere Sprachen und zur Unterstützung von Immigrationsangelegenheiten
+"
+                            android:paddingTop="4dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/goldcolor"
+                            android:textSize="6sp" />
+
+                        <TextView
+                            android:id="@+id/tv_20_offenbench34_footer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="left"
+                            android:paddingLeft="10dp"
+                            android:visibility="gone"
+                            android:text="63065 Offenbach am Main"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="-1dp"
+                            android:textSize="6sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.34"
+                    android:gravity="center"
+                    android:background="@color/footerBlue"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_25_Velksbank_footer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:text="Metaphrase"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:textSize="6sp"
+                        android:layout_marginTop="2dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_26_banknumber_footer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:text="DE95 1101 0101 5518 4742 83"
+                        android:textColor="@color/white"
+                        android:paddingBottom="3dp"
+                        android:textSize="6sp" />
+                    <TextView
+                        android:id="@+id/tv_rest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:text="BIC: SOBKDEB2XXX"
+                        android:textColor="@color/white"
+                        android:paddingBottom="3dp"
+                        android:textSize="6sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_21_tel_footer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            android:text="Tel: 069 506 086 810"
+                            android:textColor="@color/white"
+                            android:textSize="6sp" />
+
+                        <TextView
+                            android:id="@+id/tv_22_fax_footer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+
+                            android:text="Fax :(069) 900 19 595"
+                            android:textColor="@color/white"
+                            android:textSize="6sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.25"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_23_mail_footer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            android:text="service@metaphrase.net"
+                            android:textColor="@color/white"
+                            android:textSize="6sp" />
+
+                        <TextView
+                            android:id="@+id/tv_24_metaphrase_mail_footer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            android:text="www.metaphrase.online"
+                            android:textColor="@color/white"
+                            android:textSize="6sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_27_Steuernumner_footer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="0.25"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:text="Steuernummer:354021229"
+                        android:textColor="@color/white"
+                        android:textSize="6sp" />
+
+                    <TextView
+                        android:id="@+id/tv_28_finnazami_footer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="0.25"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:text="Finanzamt Offenbach"
+                        android:textColor="@color/white"
+                        android:textSize="6sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_invoice"
+            android:background="@color/darkBlue"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            >
+            <Button
+
+                android:id="@+id/btn_save_as_pdf"
+                android:layout_width="wrap_content"
+
+                android:layout_height="35dp"
+                android:background="@drawable/btn_back"
+                android:padding="8dp"
+                android:text="
+ALS PDF SPEICHERN"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_save_black_24dp"
+                >
+            </Button>
+        </LinearLayout>
+        <!-- <Button
+        android:id="@+id/btn_save_as_pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_back"
+        android:layout_below="@+id/rl_invoice"
+        android:text=" Save as PDF"
+        android:drawableLeft="@drawable/ic_save_black_24dp"
+        android:layout_centerHorizontal="true">
+    </Button>-->
+</RelativeLayout>
+    </ScrollView>

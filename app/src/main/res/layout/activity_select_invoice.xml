@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectInvoiceActivity">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkBlue"
+        >
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/appicon"/>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_below="@+id/rl"
+        android:background="@color/colorAccent"
+        />
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/view1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="-10dp"
+        android:background="@color/lightBlue"
+
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Bitte wählen Sie Ihre Rechnung aus"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_back"
+            android:paddingBottom="5dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_angebot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/gradient">
+
+                        <TextView
+                            android:id="@+id/angebot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Angebot "
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="italic|bold" />
+
+                        <TextView
+                            android:id="@+id/descritopn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/angebot"
+                            android:layout_marginStart="10dp"
+                            android:text="Beschreibung:"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/descritopn"
+                            android:layout_toEndOf="@+id/descritopn"
+                            android:text="Diese Rechnung enthält folgendes"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/di"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/d"
+                            android:layout_toEndOf="@+id/descritopn"
+                            android:text="1: Arbeits- / Artikelbeschreibung"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/dii"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/di"
+                            android:layout_toEndOf="@+id/descritopn"
+                            android:text="2: Artikel Menge"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dii"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/descritopn"
+                            android:text="3: Arbeits- / Artikelpreis (€)"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_norm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/gradient">
+
+                        <TextView
+                            android:id="@+id/normzelein"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Normzeilen "
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="italic|bold" />
+
+                        <TextView
+                            android:id="@+id/de"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/normzelein"
+                            android:layout_marginStart="10dp"
+                            android:text="Beschreibung:"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/der"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/de"
+                            android:layout_toEndOf="@+id/de"
+                            android:text="Diese Rechnung enthält folgendes"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/dit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/der"
+                            android:layout_toEndOf="@+id/de"
+                            android:text="1: Arbeits- / Artikelbeschreibung"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/diid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dit"
+                            android:layout_toEndOf="@+id/de"
+                            android:text="2: Anzahl der Wörter"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/diid"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/de"
+                            android:text="3: Preis (€) pro Zeile"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/privat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/gradient">
+
+                        <TextView
+                            android:id="@+id/privatkunden"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Privatkunde "
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="italic|bold" />
+
+                        <TextView
+                            android:id="@+id/des"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/privatkunden"
+                            android:layout_marginStart="10dp"
+                            android:text="Beschreibung:"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/derr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/des"
+                            android:layout_toEndOf="@+id/des"
+                            android:text="Diese Rechnung enthält folgendes"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/ditt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/derr"
+                            android:layout_toEndOf="@+id/des"
+                            android:text="1: Arbeits- / Artikelbeschreibung"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/diidd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ditt"
+                            android:layout_toEndOf="@+id/des"
+                            android:text="2: Artikel Menge"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/diidd"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/des"
+                            android:text="3: Arbeits- / Artikelpreis (€)"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_dezimal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/gradient">
+
+                        <TextView
+                            android:id="@+id/Dezimal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Dezimal "
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="italic|bold" />
+
+                        <TextView
+                            android:id="@+id/desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Dezimal"
+                            android:layout_marginStart="10dp"
+                            android:text="Beschreibung:"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/derrr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/desc"
+                            android:layout_toEndOf="@+id/desc"
+                            android:text="Diese Rechnung enthält folgendes"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/dittt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/derrr"
+                            android:layout_toEndOf="@+id/desc"
+                            android:text="1: Arbeits- / Artikelbeschreibung"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/diiddd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dittt"
+                            android:layout_toEndOf="@+id/desc"
+                            android:text="2: Anzahl der Stunden"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/dddd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/diiddd"
+                            android:layout_toEndOf="@+id/desc"
+                            android:text="3: Anzahl der Minuten"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dddd"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/desc"
+                            android:text="4: Preis (€) pro Stunde"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_dolme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/gradient">
+
+                        <TextView
+                            android:id="@+id/dolmet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Dolmetscher "
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="italic|bold" />
+
+                        <TextView
+                            android:id="@+id/descr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dolmet"
+                            android:layout_marginStart="10dp"
+                            android:text="Beschreibung:"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/derrrr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/descr"
+                            android:layout_toEndOf="@+id/descr"
+                            android:text="Diese Rechnung enthält folgendes"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/ditttt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/derrrr"
+                            android:layout_toEndOf="@+id/descr"
+                            android:text="1: Arbeits- / Artikelbeschreibung"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/diidddd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ditttt"
+                            android:layout_toEndOf="@+id/descr"
+                            android:text="2: Artikel Menge"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/diidddd"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/descr"
+                            android:text="3: Arbeits- / Artikelpreis (€)"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_PRIVATEKUNDEN"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_back"
+            android:gravity="center"
+            android:text="PRIVATEKUNDEN RECHNUNG"
+            android:textColor="@color/darkBlue"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_DOLMETSCHER"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_PRIVATEKUNDEN"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_back"
+            android:gravity="center"
+            android:text="DOLMETSCHER RECHNUNG"
+            android:textColor="@color/darkBlue"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_DEZIMAL"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_DOLMETSCHER"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_back"
+            android:gravity="center"
+            android:text="DEZIMAL RECHNUNG"
+            android:textColor="@color/darkBlue"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_NORMEZEILEN"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_DEZIMAL"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn_back"
+            android:gravity="center"
+            android:text="NORMEZEILEN RECHNUNG"
+            android:textColor="@color/darkBlue"
+            android:textSize="24sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!--<View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_above="@+id/view4"
+        android:background="@color/colorAccent"
+        />
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"/>-->
+</RelativeLayout>

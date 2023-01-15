@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="center"
+    android:background="@color/transparent">
+    ]
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialogback">
+
+        <LinearLayout
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/closetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:gravity="end">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_close_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_five_dollar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="
+Bitte geben Sie Ihren Text ein"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ed_newtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_back"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="40dp"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                 android:text="Sollte der Einsatz länger als eine Stunde dauern, wird Ihnen von uns den Differenzbetrag in einer separaten Rechnung zugesandt."
+                android:layout_below="@+id/tv_five_dollar"
+                android:visibility="visible"
+                android:hint=""
+                android:textColorHint="@color/white"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btn_savechange"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="128dp"
+                android:layout_below="@+id/ed_newtext"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_back"
+                android:text="
+speichern"
+                android:textColor="@color/darkBlue" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
